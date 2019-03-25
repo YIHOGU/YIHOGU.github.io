@@ -2,7 +2,7 @@
 Sejong University WebProgramming
 
 1. 
-<a href="https://yihogu.github.io/sample/sampler/">
+<a href="https://yihogu.github.io/sample/">
 sample
 </a>
 <br>
