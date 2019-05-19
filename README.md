@@ -14,3 +14,4 @@ Sejong University WebProgramming
 
 
 A. <a href="https://yihogu.github.io/Sejong_Duck_SNS/home.html"> 데이터베이스 서버연결 테스트 </a>
+A. <a href="https://yihogu.github.io/server_test/form.html"> 데이asdasd </a>
