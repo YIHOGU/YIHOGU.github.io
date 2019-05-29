@@ -1,0 +1,20 @@
+table{
+  width:100%;
+  border:0;
+  background-color: #777777;
+}
+.title{
+  height:35px;
+  text-align: center;
+  background-color: #222222;
+}
+.post{
+  border-spacing: 10px;
+}
+b{
+  color:#ffffff;
+  font-size: 16px;
+}
+td{
+  background-color: $ffffff;
+}
