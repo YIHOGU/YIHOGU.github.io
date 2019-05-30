@@ -16,5 +16,39 @@ b{
   font-size: 16px;
 }
 td{
-  background-color: $ffffff;
+  background-color: #ffffff;
+}
+.boardArticle table {
+  width:100%
+}
+
+.boardArticle th {
+  padding:5px 0;
+  border-top:2px solid #666;
+  border-bottom:1px solid #666
+}
+
+.boardArticle td {
+  padding:8px 0;
+  border-bottom:1px solid #666
+}
+.boardArticle .no {
+  width:10%;
+  text-align:center
+}
+.boardArticle .boardtitle {
+  width:50%;
+  text-align:center
+}
+.boardArticle .author {
+  width:15%;
+  text-align:center
+}
+.boardArticle .date {
+  width:15%;
+  text-align:center
+}
+.boardArticle .hit {
+  width:10%;
+  text-align:center
 }

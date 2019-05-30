@@ -129,6 +129,9 @@ body {
 .navigation-menu.active li:nth-child(5) {
   transition-delay: .7s;
 }
+.navigation-menu.active li:nth-child(6) {
+  transition-delay: .8s;
+}
 
 .hero{
   background-color: rgba(255,255,255,0.7);
