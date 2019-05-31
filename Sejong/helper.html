@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="js/basicjs.js"></script>
+  <script src="js/helper.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,33 @@
     <section class="hero">
       <div class="hero-wrapper"><br>
         <h1>Sejong University <br> <span> Grade Helper</span></h1><Br>
-
+        <table>
+          <tr>
+            <td>
+              <select id="selectBox" name="selectBox" onchange="selectEvent(this)">
+                <option value="" selected="selected">--선택하세요--</option>
+                <option value="인문과학대학">인문과학대학</option>
+                <option value="사회과학대학">사회과학대학</option>
+                <option value="경영대학">경영대학</option>
+                <option value="호텔관광대학">호텔관광대학</option>
+                <option value="자연과학대학">자연과학대학</option>
+                <option value="생명과학대학">생명과학대학</option>
+                <option value="전자정보공학대학">전자정보공학대학</option>
+                <option value="소프트웨어융합대학">소프트웨어융합대학</option>
+                <option value="공과대학">공과대학</option>
+                <option value="예체능대학">예체능대학</option>
+                <option value="법학부">법학부</option>
+              </select>
+            </td>
+            <td>
+              <select id="department">
+                <option>단과대학을 선택하세요</option>
+              </select>
+            </td>
+          </tr>
+        </table><br>
+        <input type="file" name="upload_xls" style="display:inline-block">
+        <input type="submit" name="등록" value="등록">
       </div>
     </section>
 
