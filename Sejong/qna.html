@@ -34,120 +34,118 @@
     </div>
 
     <section class="hero">
-      <div class="hero-wrapper">
-        <h1>Sejong University <br> <span> Grade Helper</span></h1>
+      <h1>Sejong University <br> <span> Grade Helper</span></h1>
 
-        <div id="post">
+      <div id="post">
 
 
-          <form action=insert.php method=post>
-            <table>
+        <form action=insert.php method=post>
+          <table>
+            <tr>
+              <td class="title">
+                <b>글 쓰 기</b>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="post">
+                  <tr>
+                    <td width=80 align=center>이름</td>
+                    <td align=left>
+                      <INPUT type=text name=name placeholder="이름">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width=80 align=center>비밀번호</td>
+                    <td align=left>
+                      <INPUT type=password name=pass placeholder="비밀번호">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width=80 align=center>확인</td>
+                    <td align=left>
+                      <INPUT type=password name=passcheck placeholder="비밀번호 확인">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width=80 align=center>제 목</td>
+                    <td align=left>
+                      <INPUT type=text name=title size=60 placeholder="제목">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width=80 align=center>내용</td>
+                    <td align=left>
+                      <TEXTAREA name=content cols=65 rows=15 placeholder="내용을 입력하세요"></TEXTAREA>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan=10 align=center>
+                      <INPUT type=submit value="글 저장하기">
+
+                      <INPUT type=reset value="다시 쓰기">
+
+                      <INPUT type=button value="게시판" onclick="radioOnOff('board')">
+                    </td>
+                  </tr>
+                </TABLE>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+
+      <div id="board" style="display:none">
+        <article class="boardArticle">
+
+          <h3>문의게시판</h3>
+
+          <table>
+
+            <caption class="readHide">자유게시판</caption>
+
+            <thead>
+
               <tr>
-                <td class="title">
-                  <b>글 쓰 기</b>
-                </td>
+
+                <th scope="col" class="no">번호</th>
+
+                <th scope="col" class="boardtitle">제목</th>
+
+                <th scope="col" class="author">작성자</th>
+
+                <th scope="col" class="date">작성일</th>
+
+                <th scope="col" class="hit">조회</th>
+
               </tr>
-              <tr>
-                <td>
-                  <table class="post">
-                    <tr>
-                      <td width=80 align=center>이름</td>
-                      <td align=left>
-                        <INPUT type=text name=name placeholder="이름">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width=80 align=center>비밀번호</td>
-                      <td align=left>
-                        <INPUT type=password name=pass placeholder="비밀번호">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width=80 align=center>확인</td>
-                      <td align=left>
-                        <INPUT type=password name=passcheck placeholder="비밀번호 확인">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width=80 align=center>제 목</td>
-                      <td align=left>
-                        <INPUT type=text name=title size=60 placeholder="제목">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width=80 align=center>내용</td>
-                      <td align=left>
-                        <TEXTAREA name=content cols=65 rows=15 placeholder="내용을 입력하세요"></TEXTAREA>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan=10 align=center>
-                        <INPUT type=submit value="글 저장하기">
 
-                        <INPUT type=reset value="다시 쓰기">
+            </thead>
 
-                        <INPUT type=button value="게시판" onclick="radioOnOff('board')">
-                      </td>
-                    </tr>
-                  </TABLE>
-                </td>
-              </tr>
-            </table>
-          </form>
-        </div>
-
-        <div id="board" style="display:none">
-          <article class="boardArticle">
-
-            <h3>문의게시판</h3>
-
-            <table>
-
-              <caption class="readHide">자유게시판</caption>
-
-              <thead>
-
-                <tr>
-
-                  <th scope="col" class="no">번호</th>
-
-                  <th scope="col" class="boardtitle">제목</th>
-
-                  <th scope="col" class="author">작성자</th>
-
-                  <th scope="col" class="date">작성일</th>
-
-                  <th scope="col" class="hit">조회</th>
-
-                </tr>
-
-              </thead>
-
-              <tbody>
-                <?php
+            <tbody>
+              <?php
                 // 게시판 불러오는 php
                 ?>
 
-                <tr>
+              <tr>
 
-                  <td class="no"><?php ?></td>
+                <td class="no"><?php ?></td>
 
-                  <td class="boardtitle"><?php ?></td>
+                <td class="boardtitle"><?php ?></td>
 
-                  <td class="author"><?php ?></td>
+                <td class="author"><?php ?></td>
 
-                  <td class="date"><?php ?></td>
+                <td class="date"><?php ?></td>
 
-                  <td class="hit"><?php ?></td>
+                <td class="hit"><?php ?></td>
 
-                </tr>
+              </tr>
 
-              </tbody>
+            </tbody>
 
-            </table><br>
-            <input type=button value="글쓰기" onclick="radioOnOff('post')">
-          </article>
-        </div>
+          </table><br>
+          <input type=button value="글쓰기" onclick="radioOnOff('post')">
+        </article>
       </div>
     </section>
 
