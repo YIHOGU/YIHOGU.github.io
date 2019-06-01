@@ -1,0 +1,37 @@
+.file-upload {
+  display:inline-block;
+  float:left;
+}
+.hero-select{
+  height:10%;
+}
+.hero-helper{
+  height:70%;
+  border: 1px solid #000000;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.hero-helper #helper-table{
+  float:left;
+  width:48%;
+  table-layout: auto;
+  word-break: keep-all;
+}
+#helper-table th{
+  text-align: center;
+}
+#helper-table #subject{
+  width:70%;
+}
+#helper-table #credit{
+  width:12%;
+}
+#helper-table #grade{
+  width:12%;
+}
+.helper-content{
+  float:left;
+  border: 1px solid #000000;
+  width: 50%;
+  margin-left: 1%;
+}

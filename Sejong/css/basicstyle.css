@@ -141,9 +141,6 @@ body {
   padding:20px 30px;
   overflow: hidden;
 }
-.hero-wrapper{
-  height: 100%;
-}
 iframe{
   width: 100%;
   height: 73vh;
